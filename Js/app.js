@@ -180,14 +180,14 @@ const products = [
 
 const productMapping = products.map(
   (product) =>
-       `
+    `
           <div class="product-card pb-3 pt-5 w-full">
              <div class="img w-full"><img class="w-full" src="${product.img}" alt="Image"></div>
              <div class="text-center px-2">
                  <h2 class="product-name text-xl font-extrabold">${product.name}</h2>
                  <strong class="text-xl">$${product.price}</strong>
                  <a href="#productDetails" class="text-black py-2 hover:underline block">Product Details</a>
-                 <button class="border border-blue-600 bg-blue-600 product-btn text-xl py-1 px-2 w-full" id=${product.id}>Add to Cart</button>
+                 <button class="hover:bg-gradient-to-l from-amber-500 via-green-600 to-rose-900 border border-blue-600 rounded-lg bg-blue-600 product-btn text-xl py-1 px-2 w-full" id=${product.id}>Add to Cart</button>
              </div>
        
           </div>
