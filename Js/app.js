@@ -155,13 +155,34 @@ const products = [
     name: "Padlock",
     img: "https://picsum.photos/251/202",
   },
+  {
+    id: 9,
+    Qty: 1,
+    price: "900",
+    name: "Padlock",
+    img: "https://picsum.photos/251/202",
+  },
+  {
+    id: 9,
+    Qty: 1,
+    price: "900",
+    name: "Padlock",
+    img: "https://picsum.photos/251/202",
+  },
+  {
+    id: 9,
+    Qty: 1,
+    price: "900",
+    name: "Padlock",
+    img: "https://picsum.photos/251/202",
+  },
 ];
 
 const productMapping = products.map(
   (product) =>
        `
-          <div class="product-card">
-             <div class="img"><img src="${product.img}" alt="Image"></div>
+          <div class="product-card w-full">
+             <div class="img w-full"><img class="w-full" src="${product.img}" alt="Image"></div>
              <div class="text-center px-2">
                  <h2 class="product-name">${product.name}</h2>
                  <strong>$${product.price}</strong>
