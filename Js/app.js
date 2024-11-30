@@ -67,6 +67,7 @@ function chngimg() {
     // gsap.to(".logotxt", { duration: 2, rotation: "360" });
     
  gsap.from(".img", { duration: 1.5, skew: 45, y: "random(-200, 200)", stagger: 0.25 });
+ gsap.from(".animate", { duration: 1.5, rotation: 360, y: "random(-200, 200)", stagger: 0.25 });
 //  gsap.effects.explode(".logotxt", {
 //    direction: "up",
 //    duration: 3,

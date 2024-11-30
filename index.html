@@ -7,6 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/css/output.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
     <title>SUNNYTEX FASHION WORLD</title>
 </head>
 
@@ -210,14 +215,14 @@
         <section
             class="hero bg-gradient-to-r from-pink-600 via-blue-500 to-teal-600 grid grid-cols-none w-full  lg:grid-cols-2 ">
 
-            <div class="order-last lg:order-first flex justify-center items-center w-full overflow-hidden div1">
+           <div class="hidden lg:block m-auto">
+            <div class=" order-last lg:order-first flex justify-center items-center w-full overflow-hidden div1">
                 <div class="w-[100vw] my-auto ml-10">
                     <p
                         class=" txt3 text-5xl text-white translate-y-[-1000px] transition-all duration-1000 ease-in-out animate-pulse ">
                         <span class="text-2xl">Flat</span> 75%Off
                     </p>
-                    <p
-                        class="txt1 text-5xl text-white translate-x-[1500px] transition-all duration-1000 ease-in-out my-3">
+                    <p class="txt1 text-5xl text-white translate-x-[1500px] transition-all duration-1000 ease-in-out my-3">
                         It’s Happening this Season!</p>
                     <p class=" txt2 text-5xl text-white translate-x-[-700px] transition-all duration-1000 ease-in-out">@
                         Aba, Abia State Nigeria!</p>
@@ -226,13 +231,36 @@
                         Now
                     </button>
                 </div>
-
+            
             </div>
 
+           </div>
 
 
             <div>
-                <img src="Images/image5.png" class=" img h-[89vh] w-full object-contain" alt="heroImg">
+                <!-- <img src="Images/image5.png" class=" img h-[89vh] w-full object-contain" alt="heroImg"> -->
+
+
+
+<div class="slider-nav-autoplay slider-nav-autopause swiffy-slider
+ w-full">
+    <ul class="slider-container w-full overflow-hidden *:inline-block">
+        <li><img src="Images/image5.png" class="object-contain img h-[89vh] w-full"></li>
+        <li><img src="Images/Carousel_Img.png" class="object-contain img h-[89vh] w-full"></li>
+        <li><img src="Images/tailor.jpeg" class="object-contain img h-[89vh] w-full" ></li>
+    </ul>
+
+    <button type="button" class="slider-nav"></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
+
+
                 <!-- <img src="Images/Carousel_Img.png" class="image2 h-[89vh] w-full object-contain" alt="heroImg"> -->
             </div>
 
@@ -466,6 +494,8 @@
         <small class="text-white grid place-items-center py-3">Copyright © 20242020 All rights reserved | This work is
             dedicated to SUNNYTEX FASHION WORLD</small>
     </footer>
+
+    <p class="animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eveniet.</p>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="Js/app.js"></script>
